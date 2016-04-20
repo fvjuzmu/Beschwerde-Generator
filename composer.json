@@ -1,0 +1,17 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "itbz/fpdf": "1.7.2",
+    "pigult/php-ipp": "dev-master",
+    "0x46616c6b/etherpad-lite-client": "v0.1.1"
+  }
+}
