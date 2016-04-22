@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Beschwewrdegenerator</title>
+    <title>Operation Brieftaube</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <h2>Dynamic Tabs</h2>
+        <h2 style="margin: 80px 50px 0 0; float: left;">Operation Brieftaube</h2>
+        <img src="../assets/carrierpigeon.gif" width="240" height="177" alt="bild einer Brieftaube">
 
+        <br style="clear: both">
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home1">Home</a></li>
             <?php
@@ -27,8 +29,12 @@
 
         <div class="tab-content">
             <div id="home1" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Anleitung</h3>
+                <p>Einfach oben den Buchstaben auswählen mit dem euer Vorname beginnt, dann auf euren Namen tippen und schon sollte aus dem Drucker ein Personalisiertes Beschwerdeschreiben rausfallen.</p>
+
+                <p>Sollt nach einer Minute immer noch nichts aus dem Drucker kommen, bitte Überprüfen ob der Drucker eingeschaltet ist. Falls ja, einfach noch einmal versuchen. Falls nicht, Drucker einschalten, kurz warten und dann nochmal versuchen.</p>
+
+                <p>Wenn es dann immer noch icht funktioniert, bitte einen Techniker rufen, aber nicht mich ;)</p>
             </div>
             <?php
             foreach($mitglieder as $buchstabe => $userlist)
@@ -68,8 +74,8 @@
                 // Callback handler that will be called on success
                 request.done(function (response, textStatus, jqXHR){
                     // Log a message to the console
-                    console.log("Hooray, it worked!");
                     alert('Danke ' + user + ',\ndein personalisierter Beschwerdebrief sollte nun gedruckt werden.');
+                    $('.nav-tabs a:first').tab('show')
                 });
             }
         });

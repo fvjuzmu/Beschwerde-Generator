@@ -11,7 +11,6 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-/src/Mitgliederliste.php
 # Windows Installer files
 *.cab
 *.msi
@@ -73,3 +72,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+#####custom######
+/src/settings.inc.php
